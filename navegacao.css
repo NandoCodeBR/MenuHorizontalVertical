@@ -1,0 +1,73 @@
+#vertical{
+    
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+ #verticali{
+
+    padding: 10px 20px;
+
+    background: url(../CSS/imgMenu/seta.png) no-repeat left center;
+}
+ a{
+     text-decoration: none;
+     color: white;
+ }
+.verticala {
+    width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px; /*Aumenta o tamanho da linha*/
+    text-decoration: none;
+    text-indent: 40px;
+    background: url(../CSS/imgMenu/menu.png) left bottom; /*Estamos usando a mesma imagem, mas com posições diferentes*/
+}
+#vertical a:hover{
+
+    background-position: right bottom;
+    animation: animacao 0.4s;
+}
+@keyframes animacao {
+    0% {
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+#home .home a,
+#sobre .sobre a,
+#noticias .noticias a,
+#servicos .servicos a,
+#contato .contato a{
+    background-position: right bottom;
+    animation: animacao 0.4s;
+}
+
+
+
+#horizontal{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+    background: #159cb0 url('../CSS/NavHor/fundo-horizontal.png') repeat-x;
+    width: 720px;
+    float: left;
+}
+.horizontal {
+    float: left;
+
+}
+.lhorizontal {
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    background: url('../CSS/NavHor/divisor.png') repeat-y left top;
+}
+#primeiro {
+    background: none;
+}
